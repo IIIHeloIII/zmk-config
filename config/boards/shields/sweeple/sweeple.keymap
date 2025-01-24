@@ -145,6 +145,11 @@
             bindings = <&bootloader>;
             key-positions = <5 9>;
         };
+
+        combo_j {
+            bindings = <&kp J>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {

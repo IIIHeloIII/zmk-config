@@ -103,37 +103,23 @@
 
         combo_aa {
             timeout-ms = <30>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             layers = <0>;
             bindings = <&kp LBKT>;
         };
 
         combo_ae {
             timeout-ms = <30>;
-            key-positions = <7 8>;
+            key-positions = <17 18>;
             layers = <0>;
             bindings = <&kp SEMI>;
         };
 
         combo_ao {
             timeout-ms = <30>;
-            key-positions = <27 28>;
+            key-positions = <7 8>;
             layers = <0>;
             bindings = <&kp SQT>;
-        };
-
-        combo_x {
-            timeout-ms = <30>;
-            key-positions = <11 12>;
-            layers = <0>;
-            bindings = <&kp X>;
-        };
-
-        combo_q {
-            timeout-ms = <30>;
-            key-positions = <21 22>;
-            layers = <0>;
-            bindings = <&kp Q>;
         };
 
         Bootloader-Left {
@@ -146,9 +132,34 @@
             key-positions = <5 9>;
         };
 
+        combo_b {
+            bindings = <&kp B>;
+            key-positions = <2 3>;
+        };
+
+        combo_g {
+            bindings = <&kp G>;
+            key-positions = <13 12>;
+        };
+
+        combo_v {
+            bindings = <&kp V>;
+            key-positions = <23 22>;
+        };
+
         combo_j {
             bindings = <&kp J>;
-            key-positions = <1 2>;
+            key-positions = <6 7>;
+        };
+
+        combo_m {
+            bindings = <&kp M>;
+            key-positions = <16 17>;
+        };
+
+        combo_k {
+            bindings = <&kp K>;
+            key-positions = <26 27>;
         };
     };
 

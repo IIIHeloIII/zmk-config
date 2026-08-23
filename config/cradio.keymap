@@ -64,6 +64,7 @@
     macros {
         tilde: tilde {
             label = "macro_tilde";
+            display-name = "~";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(RBKT) &kp RA(RBKT)>;
@@ -71,6 +72,7 @@
 
         btick: btick {
             label = "macro_btick";
+            display-name = "`";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp PLUS &kp PLUS>;
@@ -78,6 +80,7 @@
 
         hat: hat {
             label = "macro_hat";
+            display-name = "^";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RBRC &kp RBRC>;
@@ -103,37 +106,23 @@
 
         combo_aa {
             timeout-ms = <30>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
             layers = <0>;
             bindings = <&kp LBKT>;
         };
 
         combo_ae {
             timeout-ms = <30>;
-            key-positions = <7 8>;
+            key-positions = <17 18>;
             layers = <0>;
             bindings = <&kp SEMI>;
         };
 
         combo_ao {
             timeout-ms = <30>;
-            key-positions = <27 28>;
+            key-positions = <7 8>;
             layers = <0>;
             bindings = <&kp SQT>;
-        };
-
-        combo_x {
-            timeout-ms = <30>;
-            key-positions = <11 12>;
-            layers = <0>;
-            bindings = <&kp X>;
-        };
-
-        combo_q {
-            timeout-ms = <30>;
-            key-positions = <21 22>;
-            layers = <0>;
-            bindings = <&kp Q>;
         };
 
         Bootloader-Left {
@@ -146,9 +135,39 @@
             key-positions = <5 9>;
         };
 
+        Studio-Unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <30 33>;
+        };
+
+        combo_b {
+            bindings = <&kp B>;
+            key-positions = <2 3>;
+        };
+
+        combo_g {
+            bindings = <&kp G>;
+            key-positions = <13 12>;
+        };
+
+        combo_v {
+            bindings = <&kp V>;
+            key-positions = <23 22>;
+        };
+
         combo_j {
             bindings = <&kp J>;
-            key-positions = <1 2>;
+            key-positions = <6 7>;
+        };
+
+        combo_m {
+            bindings = <&kp M>;
+            key-positions = <16 17>;
+        };
+
+        combo_k {
+            bindings = <&kp K>;
+            key-positions = <26 27>;
         };
     };
 
@@ -166,19 +185,19 @@
 
         symbol_1_layer {
             bindings = <
-&trans    &kp RA(N4)     &kp RA(N2)  &kp RPAR     &trans       &trans     &kp NUBS        &kp UNDER   &kp MINUS  &trans
-&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp ASTRK  &kp FSLH        &kp CARET   &kp AMPS   &kp PIPE
-&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans       &trans     &kp RA(N7)      &kp RA(N8)  &tilde     &trans
-                                     &skq LSHIFT  &skq LGUI    &sl 2      &skq BACKSPACE
+&trans    &kp RA(N4)     &kp RA(N2)  &kp RA(N3)   &trans       &trans        &kp NUBS        &kp LS(FSLH)  &kp FSLH    &tilde
+&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp LS(BSLH)  &kp LS(N7)      &hat          &kp LS(N6)  &kp RA(EQUAL)
+&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans       &kp NUBS      &kp RA(N7)      &kp RA(N8)    LS(N8)      &trans
+                                     &skq LSHIFT  &skq LGUI    &sl 2         &skq BACKSPACE
             >;
         };
 
         symbol_2_layer {
             bindings = <
-&trans     &trans  &trans    &trans         &trans    &trans    &kp LS(NUBS)  &kp EXCL    &trans        &trans
-&kp EQUAL  &trans  &kp BSLH  &kp LS(COMMA)  &trans    &kp LPAR  &kp LS(FSLH)  &trans      &kp RA(NUBS)  &trans
-&sl 4      &trans  &trans    &kp COMMA      &trans    &trans    &kp RA(N0)    &kp RA(N9)  &hat          &trans
-                             &trans         &trans    &trans    &trans
+&trans     &trans  &trans        &trans         &trans    &trans        &kp LS(NUBS)   &kp EXCL    &trans        &trans
+&kp LS(N0) &trans  &kp RA(NUBS)  &kp LS(COMMA)  &trans    &kp LS(N8)    &kp LS(MINUS)  &trans      &kp RA(NUBS)  &trans
+&sl 4      &trans  &trans        &kp COMMA      &trans    &kp LS(NUBS)  &kp RA(N0)     &kp RA(N9)  LS(N9)        &trans
+                                 &trans         &trans    &trans        &trans
             >;
         };
 

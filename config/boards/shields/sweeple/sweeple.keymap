@@ -132,6 +132,11 @@
             key-positions = <5 9>;
         };
 
+        Studio-Unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <30 33>;
+        };
+
         combo_b {
             bindings = <&kp B>;
             key-positions = <2 3>;

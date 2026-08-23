@@ -5,3 +5,24 @@
  */
 
 #include "sweeple.dtsi"
+#include <layouts/cuddlykeyboards/ferris.dtsi>
+
+/*
+ * ZMK Studio (needed by KeyPeek) requires a physical layout instead of a bare
+ * matrix transform. Sweeple's 3x5+2-thumb layout matches the Ferris layout
+ * shipped in mainline ZMK, so we reuse it here, retargeted at our own
+ * transform/kscan. This only applies to the dongle (central) build --
+ * left/right keep using sweeple.dtsi's matrix transform unchanged.
+ */
+&cuddlykeyboards_ferris_layout {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
+};
+
+/ {
+    chosen {
+        /delete-property/ zmk,matrix_transform;
+        /delete-property/ zmk,kscan;
+        zmk,physical-layout = &cuddlykeyboards_ferris_layout;
+    };
+};

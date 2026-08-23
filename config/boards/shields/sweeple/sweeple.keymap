@@ -64,6 +64,7 @@
     macros {
         tilde: tilde {
             label = "macro_tilde";
+            display-name = "~";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(RBKT) &kp RA(RBKT)>;
@@ -71,6 +72,7 @@
 
         btick: btick {
             label = "macro_btick";
+            display-name = "`";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp PLUS &kp PLUS>;
@@ -78,6 +80,7 @@
 
         hat: hat {
             label = "macro_hat";
+            display-name = "^";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RBRC &kp RBRC>;

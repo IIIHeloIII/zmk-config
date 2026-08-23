@@ -185,19 +185,19 @@
 
         symbol_1_layer {
             bindings = <
-&trans    &kp RA(N4)     &kp RA(N2)  &kp LS(N9)   &trans       &trans     &kp NUBS        &kp LS(FSLH)  &kp FSLH  &trans
-&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp LS(BSLH)  &kp LS(N7)   &hat          &kp LS(N6)  &kp RA(EQUAL)
-&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans       &kp NUBS   &kp RA(N7)      &kp RA(N8)  &tilde     &trans
-                                     &skq LSHIFT  &skq LGUI    &sl 2      &skq BACKSPACE
+&trans    &kp RA(N4)     &kp RA(N2)  &kp RA(N3)   &trans       &trans        &kp NUBS        &kp LS(FSLH)  &kp FSLH    &tilde
+&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp LS(BSLH)  &kp LS(N7)      &hat          &kp LS(N6)  &kp RA(EQUAL)
+&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans       &kp NUBS      &kp RA(N7)      &kp RA(N8)    LS(N8)      &trans
+                                     &skq LSHIFT  &skq LGUI    &sl 2         &skq BACKSPACE
             >;
         };
 
         symbol_2_layer {
             bindings = <
-&trans     &trans  &trans    &trans         &trans    &trans    &kp LS(NUBS)  &kp EXCL    &trans        &trans
-&kp LS(N0) &trans  &kp RA(NUBS)  &kp LS(COMMA)  &trans    &kp LS(N8)  &kp LS(MINUS)  &trans      &kp RA(NUBS)  &trans
-&sl 4      &trans  &trans    &kp COMMA      &trans    &kp LS(NUBS)    &kp RA(N0)    &kp RA(N9)  &hat          &trans
-                             &trans         &trans    &trans    &trans
+&trans     &trans  &trans        &trans         &trans    &trans        &kp LS(NUBS)   &kp EXCL    &trans        &trans
+&kp LS(N0) &trans  &kp RA(NUBS)  &kp LS(COMMA)  &trans    &kp LS(N8)    &kp LS(MINUS)  &trans      &kp RA(NUBS)  &trans
+&sl 4      &trans  &trans        &kp COMMA      &trans    &kp LS(NUBS)  &kp RA(N0)     &kp RA(N9)  LS(N9)        &trans
+                                 &trans         &trans    &trans        &trans
             >;
         };
 

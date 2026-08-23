@@ -183,8 +183,8 @@
         symbol_1_layer {
             bindings = <
 &trans    &kp RA(N4)     &kp RA(N2)  &kp LS(N9)   &trans       &trans     &kp NUBS        &kp LS(FSLH)  &kp FSLH  &trans
-&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp LS(BSLH)  &kp LS(N7)   &hat          &kp AMPS  &kp RA(EQUAL)
-&sk LALT  &trans         &kp LS(N3)  &kp DOT      &trans       &trans     &kp RA(N7)      &kp RA(N8)  &tilde     &trans
+&btick    &kp RA(EQUAL)  &kp LS(N2)  &kp LS(DOT)  &kp PRCNT    &kp LS(BSLH)  &kp LS(N7)   &hat          &kp LS(N6)  &kp RA(EQUAL)
+&kp NUBS  &trans         &kp LS(N3)  &kp DOT      &trans       &trans     &kp RA(N7)      &kp RA(N8)  &tilde     &trans
                                      &skq LSHIFT  &skq LGUI    &sl 2      &skq BACKSPACE
             >;
         };

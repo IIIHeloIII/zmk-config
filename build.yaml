@@ -1,11 +1,11 @@
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: sweeple_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: sweeple_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: sweeple_dongle raw_hid_adapter # <-- required for Raw HID support
     snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
